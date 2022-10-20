@@ -7,7 +7,7 @@ const App = () => {
       <Swiper loop={false} paginationStyle={styles.pagination} >
           <HomeScreen />
           <View style={styles.page2}>
-            <Text>Alright</Text>
+            <Text>OKOK</Text>
           </View>
       </Swiper>
   );
