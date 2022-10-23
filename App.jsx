@@ -1,8 +1,11 @@
-import { StyleSheet, View, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import HomeScreen from './src/HomeScreen/HomeScreen';
 import Swiper from 'react-native-swiper';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const App = () => {
+
+
   return (
       <Swiper loop={false} paginationStyle={styles.pagination} >
           <HomeScreen />
@@ -15,12 +18,11 @@ const App = () => {
 
 export default App;
 
+
 const styles = StyleSheet.create({
 
-  
-
   pagination: {
-    marginBottom: 50,
+    marginBottom: 30,
   },
 
   page2: {
