@@ -21,10 +21,7 @@ const Quote = () => {
             }
             fetchData();
         },[])
-
         
-    
-
     return (
         <Text style={styles.quote}>{quote}</Text>
     );
