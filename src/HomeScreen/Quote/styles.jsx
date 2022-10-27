@@ -4,6 +4,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 const styles = StyleSheet.create({
 
     quote: {
+        width: wp(90),
         marginTop: hp(15.4),
         fontSize: hp(1.9),
         fontWeight: '600',
