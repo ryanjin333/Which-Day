@@ -16,7 +16,7 @@ const Quote = () => {
                         setQuote(`"${res.data.quote}" - ${res.data.author}`)
                     })
                     .catch( (error) => {
-                        console.warn(error)
+                        console.log(error)
                     })
             }
             fetchData();
