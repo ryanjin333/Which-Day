@@ -3,9 +3,11 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 
 const styles = StyleSheet.create({
 
-    quote: {
+    quoteButton: {
         width: wp(90),
         marginTop: hp(15.4),
+    },
+    quoteMessage: {
         fontSize: hp(1.9),
         fontWeight: '600',
         textAlign: 'center',
