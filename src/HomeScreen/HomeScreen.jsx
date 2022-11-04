@@ -1,4 +1,4 @@
-import { ImageBackground, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import Calendar from "./Calendar";
 import MainMessage from "./MainMessage";
@@ -6,11 +6,11 @@ import Quote from "./Quote";
 
 const HomeScreen = () => {
     return (
-        <ImageBackground source={require('../../assets/Background.png')} style={styles.backgroundContainer}>
+        <View style={styles.homeScreenContainer}>
             <MainMessage />
             <Calendar />
             <Quote />
-        </ImageBackground>
+        </View>
     );
 };
 
@@ -18,12 +18,11 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
 
-    backgroundContainer: {
+    homeScreenContainer: {
         flex: 1,
         alignItems: 'center',
         width: wp(100),
         height: hp(100),
-        resizeMode: 'contain',
     },  
 });
 

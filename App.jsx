@@ -1,18 +1,18 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground } from 'react-native';
 import HomeScreen from './src/HomeScreen/HomeScreen';
 import Swiper from 'react-native-swiper';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import SettingsList from './src/SettingsScreen/SettingsList';
 
 const App = () => {
 
 
   return (
+    <ImageBackground source={require('./assets/Background.png')} style={styles.backgroundContainer}>
       <Swiper loop={false} paginationStyle={styles.pagination} >
           <HomeScreen />
-          <View style={styles.page2}>
-            <Text>OKOK</Text>
-          </View>
+          <SettingsList />
       </Swiper>
+    </ImageBackground>
   );
 };
 
@@ -24,11 +24,10 @@ const styles = StyleSheet.create({
   pagination: {
     marginBottom: 30,
   },
+  backgroundContainer: {
+    width: '100%',
+    height: '100%',
+     resizeMode: 'contain',
+  },  
 
-  page2: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'white',
-  },
 });

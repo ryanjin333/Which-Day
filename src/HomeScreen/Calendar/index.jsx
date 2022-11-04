@@ -10,7 +10,7 @@ const Calendar = () => {
         <View style={styles.calendarContainer}>
             <DayCircle />
             <DateCircle />
-            <ImageBackground source={require('../../../assets/Decoration.png')} style={styles.decorationCircle} />
+            <ImageBackground source={require('../../../assets/Decoration.png')} style={styles.decorationCircle}/>
             
         </View>
     );

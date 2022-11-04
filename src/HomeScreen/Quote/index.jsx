@@ -12,10 +12,11 @@ const Quote = () => {
     const fetchData = async () => {
         await axios.get(API_URL)
             .then( (res) => {
-                setQuote(`"${res.data.quote}" - ${res.data.author}`)
+                setQuote(`"${res.data.quote}" - ${res.data.author}`);
             })
             .catch( (error) => {
-                console.log(error)
+                setQuote("There was an error fetching your quote");
+                console.log(error);
             })
     }
 
