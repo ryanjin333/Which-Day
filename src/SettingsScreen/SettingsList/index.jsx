@@ -10,12 +10,12 @@ const Data = [
             {
                 id: '1',
                 cellName: 'Privacy Policy',
-                link: 'https://expo.dev',
+                link: 'https://daytrackernwss.github.io/index.html',
             },
             {
                 id: '2',
                 cellName: 'Terms and Conditions',
-                link: 'https://google.com',
+                link: 'https://daytrackernwss.github.io/termsAndConditions.html',
             },
         ],
     }

@@ -5,16 +5,15 @@ const styles = StyleSheet.create({
 
     calendarContainer: {
         width: wp(64.3),
-        height: hp(25.5),
-        marginTop: hp(27.3),
-        //backgroundColor: 'gray'
+        height: wp(55.4),
+        marginTop: hp(21.6),
     },
 
     decorationCircle: {  
         position: 'absolute',   
         width: wp(13.6),
-        height: hp(6.3),
-        marginTop: hp(13.7),
+        height: wp(13.6),
+        marginTop: wp(29.7),
         resizeMode: 'contain',
     },
 

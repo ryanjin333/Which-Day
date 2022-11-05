@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         width: wp(100),
         height: hp(100),
+
     },  
 });
 

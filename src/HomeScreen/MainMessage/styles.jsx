@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     mainMessageContainer: {
         position: 'absolute',
         alignSelf: 'flex-start',
-        marginTop: hp(10.1),
+        marginTop: hp(4.5),
         marginLeft: wp(7.7),
     },
 
     title: {
-        fontSize: hp(5.7),      
+        fontSize: wp(12.3),      
         fontWeight: '700',
     },
 });

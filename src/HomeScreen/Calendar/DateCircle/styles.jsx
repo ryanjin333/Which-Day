@@ -5,23 +5,23 @@ const styles = StyleSheet.create({
     dateCircle: {  
         position: 'absolute',   
         width: wp(25.6),
-        height: hp(11.8),
+        height: wp(25.6),
         marginLeft: wp(38.6),
-        marginTop: hp(13.7),
+        marginTop: wp(29.7),
         resizeMode: 'contain',
         flex: 1,
         alignItems: 'center',
     },
 
     topDateText: {
-        marginTop: hp(3.1),
+        marginTop: wp(6.7),
         color: '#EE0D0D',
-        fontSize: hp(1.8),
+        fontSize: wp(3.8),
         fontWeight: '500',
     },
 
     bottomDateText: {
-        fontSize: hp(3.1),
+        fontSize: wp(6.7),
         fontWeight: '500',
     },
 

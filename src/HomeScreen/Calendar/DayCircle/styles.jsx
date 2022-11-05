@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     dayCircle: {
         position: 'absolute',
         width: wp(44.9),
-        height: hp(20.7),
+        height: wp(44.9),
         marginLeft: wp(4.6),
         resizeMode: 'contain',
         flex: 1,
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
 
     dayText: {
-        fontSize: hp(4.3),
+        fontSize: wp(9.2),
         fontWeight: '600',
     },
 

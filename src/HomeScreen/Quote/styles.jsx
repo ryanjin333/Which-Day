@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         marginTop: hp(15.4),
     },
     quoteMessage: {
-        fontSize: hp(1.9),
+        fontSize: wp(4.1),
         fontWeight: '600',
         textAlign: 'center',
     },
