@@ -9,7 +9,7 @@ This is where the information about which day it is can be seen. (Subject to cha
 <br />
 <br />
 
-<img src="https://cdn.discordapp.com/attachments/942599518782910470/1039045386838495272/IMG_0643.png" width="200"/>
+<img src="https://cdn.discordapp.com/attachments/942599518782910470/1039048579827912704/IMG_0645.png" width="200"/>
 
 <br />
 
