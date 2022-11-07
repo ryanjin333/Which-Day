@@ -9,7 +9,7 @@ This is where the information about which day it is can be seen. (Subject to cha
 <br />
 <br />
 
-<img src="https://postimg.cc/4KJdCDx4" width="200"/>
+<img src="https://i.postimg.cc/43chcZCc/IMG-0645.png" width="200"/>
 
 <br />
 
