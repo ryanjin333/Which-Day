@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "which-day",
+    "name": "Day Tracker for NWSS",
     "slug": "which-day",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,13 +18,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.huij.dayTracker",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.huij.dayTracker",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
