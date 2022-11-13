@@ -4,6 +4,7 @@ import HomeScreen from './src/HomeScreen/HomeScreen';
 import Swiper from 'react-native-swiper';
 import SettingsList from './src/SettingsScreen/SettingsList';
 
+
 const App = () => {
   
   useEffect(() => {
