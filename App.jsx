@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <ImageBackground source={require('./assets/Background.png')} style={styles.backgroundContainer}>
-        <Swiper loop={false} paginationStyle={{marginBottom: 30}}>
+        <Swiper loop={false}>
           <SafeAreaView style={{height: '100%'}}>
             <HomeScreen />
           </SafeAreaView>      
