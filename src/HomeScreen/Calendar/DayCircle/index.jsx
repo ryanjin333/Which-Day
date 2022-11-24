@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import styles from "./styles";
-import { showLoadingIndicator, hideLoadingIndicator } from "./DayLoadIndicator/dayLoadIndicatorSlice";
+import { hideLoadingIndicator } from "./DayLoadIndicator/dayLoadIndicatorSlice";
 
 const API_URL = "https://us-central1-whichday-80e32.cloudfunctions.net/app/isFirstDay";
 
@@ -26,7 +26,6 @@ const DayCircle = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             getData();
-
         }, 2000)
         return () => {
             clearInterval(interval);

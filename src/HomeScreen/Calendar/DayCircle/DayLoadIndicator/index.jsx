@@ -9,28 +9,23 @@ const DayLoadCircle = () => {
     //Redux
     const visible = useSelector((state) => state.dayLoadIndicator.visible);
     
+    //Background
     const appState = useRef(AppState.currentState);
-    
     const dispatch = useDispatch();
 
     useEffect(() => {
         const subscription = AppState.addEventListener("change", nextAppState => {
-        if (
-            appState.current.match(/inactive|background/) &&
-            nextAppState === "active"
-        ) {
+        if (appState.current.match(/inactive|background/) &&
+            nextAppState === "active") {
             dispatch(showLoadingIndicator());
         }
-
         appState.current = nextAppState;
-        console.log("AppState", appState.current);
         });
 
         return () => {
         subscription.remove();
         };
     }, []);
-
 
     return (
         <View>
