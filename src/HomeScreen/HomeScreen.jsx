@@ -1,8 +1,9 @@
-import { View, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet, ActivityIndicator } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import Calendar from "./Calendar";
 import MainMessage from "./MainMessage";
 import Quote from "./Quote";
+import DayLoadIndicator from "./Calendar/DayCircle/DayLoadIndicator";
 
 const HomeScreen = () => {
     return (
@@ -10,6 +11,7 @@ const HomeScreen = () => {
             <MainMessage />
             <Calendar />
             <Quote />
+            <DayLoadIndicator />
         </View>
     );
 };
@@ -24,6 +26,6 @@ const styles = StyleSheet.create({
         width: wp(100),
         height: hp(100),
 
-    },  
+    },
 });
 

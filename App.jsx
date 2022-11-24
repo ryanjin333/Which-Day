@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
-import { StyleSheet, StatusBar, ImageBackground, SafeAreaView, Platform } from 'react-native';
+import { StyleSheet, StatusBar, ImageBackground, SafeAreaView, Platform, AppState } from 'react-native';
+import { Provider } from 'react-redux';
 import HomeScreen from './src/HomeScreen/HomeScreen';
 import Swiper from 'react-native-swiper';
 import SettingsList from './src/SettingsScreen/SettingsList';
+import store from './src/store';
 
 
 const App = () => {
@@ -15,14 +17,16 @@ const App = () => {
    }, []);
 
   return (
-    <ImageBackground source={require('./assets/Background.png')} style={styles.backgroundContainer}>
-        <Swiper loop={false}>
-          <SafeAreaView style={{height: '100%'}}>
-            <HomeScreen />
-          </SafeAreaView>      
-            <SettingsList />
-        </Swiper>
-    </ImageBackground>
+    <Provider store={store}>
+      <ImageBackground source={require('./assets/Background.png')} style={styles.backgroundContainer}>
+          <Swiper loop={false}>
+            <SafeAreaView style={{height: '100%'}}>
+              <HomeScreen />
+            </SafeAreaView>      
+              <SettingsList />
+          </Swiper>
+      </ImageBackground>
+    </Provider>
   );
 };
 
