@@ -1,6 +1,6 @@
 # Day Tracker
 
-This is a Day Tracker made for IB students at NWSS although anyone with a full year schedule can use it too. This app is currently in its beta stage so bugs may still be exist. 
+This is a Day Tracker made for IB students at NWSS although anyone with a full year schedule can use it too. This app is currently in its beta stage so bugs may still exist. 
 
 ## Overview
 
