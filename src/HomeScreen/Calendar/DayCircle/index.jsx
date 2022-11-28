@@ -26,7 +26,7 @@ const DayCircle = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             getData();
-        }, 2000)
+        }, 3000)
         return () => {
             clearInterval(interval);
         }

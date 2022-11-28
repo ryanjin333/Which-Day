@@ -28,7 +28,7 @@ const Quote = () => {
 
     const getRandomQuote = async () => {
         const randomQuoteIndex = Math.floor(Math.random() * (quotes.length));
-        setQuote(quotes[randomQuoteIndex]);
+        setQuote(quotes[randomQuoteIndex] || "Tap me to get an inspirational quote! 👆");
     }
 
         useEffect(() => {
